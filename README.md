@@ -1,6 +1,6 @@
-SampleCode
+RNA_Processing
 ==========
-Documentation of SampleCodes
+Documentation of RNA_Processing codes
 
 1. Brief introduction
 
