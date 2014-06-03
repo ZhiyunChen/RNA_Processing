@@ -1,10 +1,11 @@
 SampleCode
 ==========
-Documentation of RNA_Processing_Codes
+Documentation of SampleCodes
 1. Brief introduction
 
-File name	Function
-geneBank.py	Defines the GeneBank class
+| File name	| Function |
+------------  ---------
+| geneBank.py	| Defines the GeneBank class |
 geneBankConstruct.py	Constructs a GeneBank object
 HLShiftFinder.py	Identifies processed genes
 operon.py	Defines the Operon class
