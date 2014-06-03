@@ -22,7 +22,7 @@ Documentation of SampleCodes
 
 2.1.1 GeneBank Construction
 
-	Running script:  **geneBankConstruct.py**
+Running script:  **geneBankConstruct.py**
 
 	Input data:
 		wt1.csv
@@ -40,7 +40,7 @@ Documentation of SampleCodes
 
 2.1.2 OperonBank Construction
 
-	Running script: **operonBankConstruct.py**
+Running script: **operonBankConstruct.py**
 
 	Input data:
 		wt1.csv
@@ -64,7 +64,7 @@ Documentation of SampleCodes
 
 2.1.3 Unification of four OperonBanks
 
-	Running script: **operonBankRefine.py**
+Running script: **operonBankRefine.py**
 
 	Input data:
 		wt1.csv
@@ -94,7 +94,7 @@ Documentation of SampleCodes
 
 2.2.1 Identification of processed genes in the WT and rny mutant
 
-	Running script: **HLShiftFinder.py**
+Running script: **HLShiftFinder.py**
 
 	Input data:
 		operonBankRD_wt1.txt
@@ -112,7 +112,7 @@ Documentation of SampleCodes
 
 2.2.2 Identification of processed genes that are present in the WT but absent in the rny mutant
 
-	Running script: **RNaseYProcessedGeneFinder.py**
+Running script: **RNaseYProcessedGeneFinder.py**
 
 	Input data:
 		processedGenes_wt1.csv
