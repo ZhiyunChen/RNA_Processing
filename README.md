@@ -7,7 +7,6 @@ Documentation of SampleCodes
 | File name	| Function |
 |---------------|  --------- |
 | geneBank.py	| Defines the GeneBank class |
-|---------------|  --------- |
 | geneBankConstruct.py|	Constructs a GeneBank object|
 |---------------|  --------- |
 | HLShiftFinder.py|	Identifies processed genes |
