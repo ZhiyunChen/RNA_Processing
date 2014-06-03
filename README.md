@@ -16,9 +16,7 @@ RNaseYProcessedGeneFinder.py	Identifies RNase Y processed genes
 sequence.py	Defines the Sequence class
 
 2. Procedure
-
 2.1 Operon definition
-
 2.1.1 GeneBank Construction
 	
 	Input data:
