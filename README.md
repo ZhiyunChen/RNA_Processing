@@ -1,6 +1,7 @@
 SampleCode
 ==========
 Documentation of SampleCodes
+
 1. Brief introduction
 
 | File name	| Function |
