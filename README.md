@@ -6,15 +6,15 @@ Documentation of SampleCodes
 
 | File name	| Function |
 |---------------|  --------- |
-| geneBank.py	| Defines the GeneBank class |
-| geneBankConstruct.py|	Constructs a GeneBank object|
+| geneBank.py	| Defines the **GeneBank** class |
+| geneBankConstruct.py|	Constructs a **GeneBank** object|
 | HLShiftFinder.py|	Identifies processed genes |
-| operon.py|	Defines the Operon class|
-| operonBank.py|	Defines the OperonBank class|
-| operonBankConstruct.py|	Constructs an OperonBank object|
+| operon.py|	Defines the **Operon** class|
+| operonBank.py|	Defines the **OperonBank** class|
+| operonBankConstruct.py|	Constructs an **OperonBank** object|
 | operonBankRefine.py|	Unifies different OperonBanks|
 | RNaseYProcessedGeneFinder.py|	Identifies RNase Y processed genes|
-| sequence.py|	Defines the Sequence class|
+| sequence.py|	Defines the **Sequence** class|
 
 2. Procedure
 
@@ -39,7 +39,9 @@ Documentation of SampleCodes
 		geneBank_rny2.txt
 
 2.1.2 OperonBank Construction
+
 	Running script: **operonBankConstruct.py**
+
 	Input data:
 		wt1.csv
 		wt2.csv
@@ -61,7 +63,9 @@ Documentation of SampleCodes
 		operonBank _rny2.bed
 
 2.1.3 Unification of four OperonBanks
+
 	Running script: **operonBankRefine.py**
+
 	Input data:
 		wt1.csv
 		wt2.csv
@@ -87,8 +91,11 @@ Documentation of SampleCodes
 		operonBankRD _rny2.bed
 
 2.2 Identification of RNase Y processed genes
-	2.2.1 Identification of processed genes in the WT and rny mutant
+
+2.2.1 Identification of processed genes in the WT and rny mutant
+
 	Running script: **HLShiftFinder.py**
+
 	Input data:
 		operonBankRD_wt1.txt
 		operonBankRD _wt2.txt
@@ -99,16 +106,19 @@ Documentation of SampleCodes
 
 	Output data:
 		processedGenes_wt1.csv
-processedGenes_wt2.csv
-processedGenes_rny1.csv
-processedGenes_rny2.csv
+		processedGenes_wt2.csv
+		processedGenes_rny1.csv
+		processedGenes_rny2.csv
 
 2.2.2 Identification of processed genes that are present in the WT but absent in the rny mutant
+
 	Running script: **RNaseYProcessedGeneFinder.py**
+
 	Input data:
 		processedGenes_wt1.csv
 		processedGenes_rny1.csv
 		operonBankRD_wt1.txt
 		operonBankRD_rny1.txt
+
 	Output data:
 		rnyProcessedGenes.csv
