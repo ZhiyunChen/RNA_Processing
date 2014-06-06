@@ -22,7 +22,7 @@ def operonJudge(seq1, seq2, readsList):
     """Define a function to determine whether two sequences belong to different operons.
     Criteria: 1. The average reads of the two sequences are more than 4-fold different.
               2. There is a 'dent' between the two sequences, the bottom of which
-                 is lower than half of the average read of the less expressed gene.
+                 is lower than half of the average read of the less expressed sequence.
               3. There two sequences have different orientations.
               4. The two sequences are over 100 bp apart.
     We consider that the two sequences lie in different operons if any of the criteria
@@ -32,14 +32,18 @@ def operonJudge(seq1, seq2, readsList):
         
     def expressJudge(seq1, seq2):
         """Returns True if seq1 and seq2 are differentially expressed,
-        and False otherwise."""
+        and False otherwise.
+        Two sequences are considered differentially expressed if their 
+        average reads are more than 4 fold in difference."""
         aveRead1 = seq1.getAverageRead()
         aveRead2 = seq2.getAverageRead()
         return aveRead1 >= aveRead2 * 4 or aveRead1 <= aveRead2 * 0.25             
 
     def dentJudge(seq1, seq2, readsList):
         """Returns True if there exists a dent between the two sequences,
-        and False otherwise."""    
+        and False otherwise.
+        The average read of the dent must be less than half of 
+        the average read of the less expressed sequence """    
         IGRStart = seq1.getEnd() + 1
         IGREnd   = seq2.getStart() - 1
         if IGRStart >= IGREnd:
@@ -57,7 +61,7 @@ def operonJudge(seq1, seq2, readsList):
             return minIGRRead <= minAveRead * 0.5
             
     def strandJudge(seq1, seq2):
-        """Returns True if the two sequences are on the same strand,
+        """Returns True if the two sequences are on different strands,
         and False otherwise."""
         strandness1 = seq1.getOrientation()
         strandness2 = seq2.getOrientation()
