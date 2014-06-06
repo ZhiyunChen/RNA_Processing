@@ -3,8 +3,10 @@ RNA_Processing
 Documentation of RNA_Processing codes
 
 1. Brief introduction
+ 
+1.1 Scripts
 
-| File name	| Function |
+| File name	| Description |
 |---------------|  --------- |
 | geneBank.py	| Defines the **GeneBank** class |
 | geneBankConstruct.py|	Constructs a **GeneBank** object|
@@ -15,6 +17,20 @@ Documentation of RNA_Processing codes
 | operonBankRefine.py|	Unifies different OperonBanks|
 | RNaseYProcessedGeneFinder.py|	Identifies RNase Y processed genes|
 | sequence.py|	Defines the **Sequence** class|
+
+1.2 Original datasets
+
+| File Name | Description |
+|-----------|-------------|
+| wt1.csv   | A list of RNA-seq reads corresponding to each nucleotide position in WT, replicate 1 |
+| wt2.csv | A list of RNA-seq reads corresponding to each nucleotide position in WT, replicate 2 |
+| rny1.csv | A list of RNA-seq reads corresponding to each nucleotide position in RNase Y mutant, replicate 1 |
+| rny2.csv | A list of RNA-seq reads corresponding to each nucleotide position in RNase Y mutant, replicate 2 |
+| Spy49_allGenes.csv | A list of all genes in *Streptococcus pyogenes* NZ131, including their locus, start and end sites, and strandness | 
+| SpyGenome.txt | A string representation of the *Streptococcus pyogenes* NZ131 genome sequence |
+| probehalfLifeWT.csv | A list of mRNA half-lives at probe level in WT |
+| probehalfLifeRNY.csv | A list of mRNA half-lives at probe level in RNase Y mutant |
+
 
 2. Procedure
 
