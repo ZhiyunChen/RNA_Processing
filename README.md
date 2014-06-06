@@ -2,7 +2,7 @@ RNA_Processing
 ==========
 Documentation of RNA_Processing codes
 
-1. Brief introduction
+Part 1. Brief introduction
 
 1.1 Scripts
 
@@ -30,7 +30,8 @@ Documentation of RNA_Processing codes
 | SpyGenome.txt | A string representation of the *Streptococcus pyogenes* NZ131 genome sequence |
 | probehalfLifeWT.csv | A list of mRNA half-lives at probe level in WT |
 | probehalfLifeRNY.csv | A list of mRNA half-lives at probe level in RNase Y mutant |
-2. Procedure
+
+Part 2. Procedure
 
 2.1 Operon definition
 
