@@ -31,7 +31,6 @@ Documentation of RNA_Processing codes
 | probehalfLifeWT.csv | A list of mRNA half-lives at probe level in WT |
 | probehalfLifeRNY.csv | A list of mRNA half-lives at probe level in RNase Y mutant |
 
-
 2. Procedure
 
 2.1 Operon definition
