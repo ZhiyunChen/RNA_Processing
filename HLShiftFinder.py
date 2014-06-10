@@ -23,8 +23,8 @@ probeHLFileList = ["probehalfLifeWT.csv", "probehalfLifeWT.csv", \
 
 ##Construct a probe-level half-life list
 for i in xrange(0, 4):
-    fileName = "processedGenes_" + nameList[i] + ".csv"
-    processedGenes = open(fileName, 'w')
+    fileName = "processedOperons_" + nameList[i] + ".csv"
+    processedOperons = open(fileName, 'w')
     probeHLFile = open(probeHLFileList[i], 'rU')
     probeHLTable = csv.reader(probeHLFile)
     probeHLList = []
@@ -72,7 +72,7 @@ for i in xrange(0, 4):
                 if maxAverageLogHL >= refAverageLogHL + threshold \
                    or minAverageLogHL <= refAverageLogHL - threshold \
                    and operon.getAverageRead() > 500:
-                    processedGenes.write(operon.getName() + \
+                    processedOperons.write(operon.getName() + \
                                          "," + operon[0].getName() + \
                                          "," + operon[-1].getName() + \
                                          "," + str(operon.getAverageRead()) + \
