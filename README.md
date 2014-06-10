@@ -105,9 +105,9 @@ Running script: **operonBankRefine.py**
 		operonBankRD _rny1.bed
 		operonBankRD _rny2.bed
 
-2.2 Identification of RNase Y processed genes
+2.2 Identification of RNase Y processed operons
 
-2.2.1 Identification of processed genes in the WT and rny mutant
+2.2.1 Identification of processed operons in the WT and rny mutant
 
 Running script: **HLShiftFinder.py**
 
@@ -120,20 +120,20 @@ Running script: **HLShiftFinder.py**
 		probehalfLifeRNY.csv
 
 	Output data:
-		processedGenes_wt1.csv
-		processedGenes_wt2.csv
-		processedGenes_rny1.csv
-		processedGenes_rny2.csv
+		processedOperons_wt1.csv
+		processedOperons_wt2.csv
+		processedOperons_rny1.csv
+		processedOperons_rny2.csv
 
-2.2.2 Identification of processed genes that are present in the WT but absent in the rny mutant
+2.2.2 Identification of processed operons that are present in the WT but absent in the rny mutant
 
-Running script: **RNaseYProcessedGeneFinder.py**
+Running script: **RNaseYProcessedOperonFinder.py**
 
 	Input data:
-		processedGenes_wt1.csv
-		processedGenes_rny1.csv
+		processedOperons_wt1.csv
+		processedOperons_rny1.csv
 		operonBankRD_wt1.txt
 		operonBankRD_rny1.txt
 
 	Output data:
-		rnyProcessedGenes.csv
+		rnyProcessedOperons.csv
