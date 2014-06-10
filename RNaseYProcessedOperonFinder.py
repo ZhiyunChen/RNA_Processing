@@ -1,10 +1,10 @@
 """
 File:
-RNaseYProcessedGeneFinder.py
+RNaseYProcessedOperonFinder.py
 
-Identify genes that are specifically processed by RNase Y.
-These genes should be present in the "processedGenes_wt1.csv" file
-but absent in the "processedGenes_rny1.csv" file.
+Identify operons that are specifically processed by RNase Y.
+These operons should be present in the "processedOperons_wt1.csv" file
+but absent in the "processedOperons_rny1.csv" file.
 
 """
 
@@ -17,19 +17,19 @@ from operonBank import OperonBank
 operonBankWT1 = OperonBank("operonBankRD_wt1.txt")
 operonBankRNY1 = OperonBank("operonBankRD_rny1.txt")
 
-f1 = open("processedGenes_wt1.csv", 'rU')
+f1 = open("processedOperons_wt1.csv", 'rU')
 processedGenes_wt1 = csv.reader(f1, delimiter=',')
 processedGenesList_wt1 = []
 for row in processedGenes_wt1:
      processedGenesList_wt1.append(row[0])
      
-f2 = open("processedGenes_rny1.csv", 'rU')
+f2 = open("processedOperons_rny1.csv", 'rU')
 processedGenes_rny1 = csv.reader(f2, delimiter=',')
 processedGenesList_rny1 = []
 for row in processedGenes_rny1:
      processedGenesList_rny1.append(row[0])
 
-f3 = open("rnyProcessedGenes.csv", 'w')    
+f3 = open("rnyProcessedOperons.csv", 'w')    
 for i in xrange(len(operonBankWT1)):
     operonWT1 = operonBankWT1[i]
     operonRNY1 = operonBankRNY1[i]
